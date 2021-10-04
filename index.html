@@ -11,18 +11,19 @@
 <style>
     .chat_box{
         clip-path: polygon(100% 0, 100% 80%, 3% 80%, 3% 5%, 0 0);
-        width: 200px;
-        height: 100px;
+        width: 33%;
+        height: auto;
         padding: 5px;
         background-color: greenyellow;
         border-radius: 5px;
+        box-sizing: border-box;
     }
 </style>
 <body>
     <div class="flex">
         <div style="width: 30vw; height: 100vh; overflow-y: scroll;">
             <div>
-                <div class="fixed top-0">
+                <div class="sticky top-0">
                     <nav class="" style="background-color: rgb(50, 55, 57);">
                         <div class="flex gap-40 p-3">
                             <div class="" style="width: 60px; height: 50px;">
@@ -48,7 +49,7 @@
                     </div>
                 </div>
                 <!-- contacts -->
-                <div class="bg-gray-800 text-white text-sm">
+                <div class="bg-gray-800 text-white text-sm pt-3">
                     <a href="#" onclick="app1()"><div class="flex gap-1 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 89px; height: 49px; border-radius: 100%;">
@@ -58,8 +59,8 @@
                                 <p class="text-bold">Azeezah</p>
                                 <p class="text-green-600 text-xs pt-1">01:23</p>
                             </div>
-                            <div class="flex gap-24">
-                                <p>
+                            <div class="flex gap-16">
+                                <p class="w-10/12">
                                     hey! how are you doing?
                                 </p>
                                 <div class="barge bg-green-600 w-4 h-4 rounded-full text-xs pl-1">2</div>
@@ -68,17 +69,36 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2 ">
+                    <a href="#" onclick="app2()"><div class="flex gap-2 p-2 ">
                         <div>
-                            <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
+                            <img src="media/pp_bigBro.jfif" alt="pp_bigBro" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
                         <div class="border-b border-gray-100">
-                            <div class="flex gap-48">
-                                <p class="text-bold">Azeezah</p>
+                            <div class="flex gap-40">
+                                <p class="text-bold">Big bro</p>
+                                <p class="text-green-600 text-xs pt-1">00:23</p>
+                            </div>
+                            <div class="flex gap-16 text-xs">
+                                <p class="w-11/12">
+                                    how are you doing?
+                                </p>
+                                <div class="barge bg-green-600 w-4 h-4 rounded-full text-xs pl-1">2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" onclick="app3()"><div class="flex gap-2 p-2">
+                        <div>
+                            <img src="media/pp_sqi.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
+                        </div>
+                        <div class=" border-b border-gray-100">
+                            <div class="flex gap-4">
+                                <p class="text-bold w-10/12">SQI WEB LEVEL 2</p>
                                 <p class="text-green-600 text-xs pt-1">01:23</p>
                             </div>
-                            <div class="flex gap-24">
-                                <p>
+                            <div class="flex gap-16">
+                                <p class="w-10/12">
                                     hey! how are you doing?
                                 </p>
                                 <div class="barge bg-green-600 w-4 h-4 rounded-full text-xs pl-1">2</div>
@@ -87,7 +107,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app4()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -106,7 +126,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app5()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -125,7 +145,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app6()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -144,7 +164,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app7()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -163,7 +183,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app8()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -182,7 +202,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app9()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -201,7 +221,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app10()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -220,7 +240,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app11()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -239,7 +259,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app12()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -258,7 +278,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app13()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -277,7 +297,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app14()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -296,7 +316,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
+                    <a href="#" onclick="app15()"><div class="flex gap-2 p-2">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -315,26 +335,7 @@
                         </div>
                     </a>
 
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2">
-                        <div>
-                            <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
-                        </div>
-                        <div class=" border-b border-gray-100">
-                            <div class="flex gap-48">
-                                <p class="text-bold">Azeezah</p>
-                                <p class="text-green-600 text-xs pt-1">01:23</p>
-                            </div>
-                            <div class="flex gap-24">
-                                <p>
-                                    hey! how are you doing?
-                                </p>
-                                <div class="barge bg-green-600 w-4 h-4 rounded-full text-xs pl-1">2</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" onclick="app1()"><div class="flex gap-2 p-2"  data-gps-track="footer.click({ location: 1, link: 24 })" data-target="tech">
+                    <a href="#" onclick="app16()"><div class="flex gap-2 p-2"  data-gps-track="footer.click({ location: 1, link: 24 })" data-target="tech">
                         <div>
                             <img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;">
                         </div>
@@ -362,14 +363,34 @@
         <div style="width: 70vw; height: 100vh; border: 1px solid gray; overflow-y: scroll;" id="_DF1">
             
         </div>
+
+        
     </div>
+
+    <div class="bg-gray-900"><div><nav><div class="flex gap-2 p-2"><div class=""><img src="media/pp_sqi.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;"></div><div class="flex gap-96"><div class="text-bold text-sm text-white my-auto"><p>SQI WEB LEVEL 2</p></div><div class="flex text-gray-300 text-md gap-10 my-auto"><i class="fas fa-search"></i><i class="fas fa-ellipsis-v"></i></i></div></div></div></nav></div><div class="bg-gray-600 p-2 text-white" style="background-image: url(media/bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png); background-attachment: fixed; background-blend-mode: normal; background-size: contain; height: 83vh"><div class="w-5/12 mx-auto bg-gray-500 rounded-md p-1"><div class="w-1/2 mx-auto text-xs text-center"><p class="mx-auto">Tuesday</p></div></div><div class="chat_box my-3 p-2"><div class="flex gap-4 pb-3 px-4"><p class="text-bold text-xs">Good morning everyone, <br> We welcome you guys to level. Wish you the very best in your line of learning.</p><p class="text-xs pt-9 self-baseline">07:22</p></div></div><div class="chat_box my-3 p-2"><div class="flex gap-4 pb-2 px-4"><p class="text-bold text-xs">Kindly join the new group and leave this current one.</p><p class="text-xs pt-6 self-baseline">07:22</p></div></div></div></div><footer class="bg-gray-900 text-gray-100"><div class="pt-1"><div class="flex gap-2 p-2"><i class="far fa-grin"></i><i class="fas fa-paperclip"></i><input type="text" placeholder="Type a message" class="rounded-full w-11/12 bg-gray-500"><i class="fas fa-microphone"></i></div></div></footer>
      
-    
+    <!-- <footer class="bg-gray-900 text-gray-100"><div class="pt-1"><div class="flex gap-2 p-2"><i class="far fa-grin"></i><i class="fas fa-paperclip"></i><input type="text" placeholder="Type a message" class="rounded-full w-11/12 bg-gray-500"><i class="fas fa-microphone"></i></div></div></footer>
+
+    <footer class="bg-gray-900 text-gray-100"><div class="pt-1"><div class="flex gap-2 p-2"><i class="far fa-grin"></i><i class="fas fa-paperclip"></i><input type="text" placeholder="Type a message" class="rounded-full w-11/12 bg-gray-500"><i class="fas fa-microphone"></i></div></div></footer>
+
+    <footer class="bg-gray-900 text-gray-100"><div class="pt-1"><div class="flex gap-2 p-2"><i class="far fa-grin"></i><i class="fas fa-paperclip"></i><input type="text" placeholder="Type a message"  class="rounded-full w-11/12 bg-gray-500"><i class="fas fa-microphone"></i></div></div></footer> -->
 
     <script type="text/javascript">
-    function app1() {
-        _DF1.innerHTML = '<div class="bg-gray-900"><div><nav><div class="flex gap-2 p-2"><div class=""><img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;"></div><div class="flex gap-96"><div class="text-bold text-sm text-white my-auto"><p>Azeezah</p></div><div class="flex text-gray-300 text-md gap-10 my-auto"><i class="fas fa-search"></i><i class="fas fa-ellipsis-v"></i></i></div></div></div></nav></div><div class="bg-gray-600 p-2 text-white" style="background-image: url(media/bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png); background-attachment: fixed; background-blend-mode: normal; background-size: contain; height: 83vh"><div class="w-5/12 mx-auto bg-gray-500 rounded-md p-1"><div class="w-/2 mx-auto text-xs text-center"><p class="mx-auto">Monday</p></div><div class="chat_box my-3 p-2"><div class="flex gap-4 p-2"><p class="text-bold text-sm">hey! how are you doing</p><p class="text-xs pt-3">07:22</p></div></div></div></div></div>';
-    }
+        function app1() {
+            _DF1.innerHTML = '<div class="bg-gray-900"><div><nav><div class="flex gap-2 p-2"><div class=""><img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;"></div><div class="flex gap-96"><div class="text-bold text-sm text-white my-auto"><p>Azeezah</p></div><div class="flex text-gray-300 text-md gap-10 my-auto"><i class="fas fa-search"></i><i class="fas fa-ellipsis-v"></i></i></div></div></div></nav></div><div class="bg-gray-600 p-2 text-white" style="background-image: url(media/bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png); background-attachment: fixed; background-blend-mode: normal; background-size: contain; height: 83vh"><div class="w-5/12 mx-auto bg-gray-500 rounded-md p-1"><div class="w-1/2 mx-auto text-xs text-center"><p class="mx-auto">Monday</p></div></div><div class="chat_box my-3 p-2"><div class="flex gap-4 p-2"><p class="text-bold text-sm">hey! how are you doing</p><p class="text-xs pt-6 self-baseline">07:22</p></div></div></div></div><footer class="bg-gray-900 text-gray-100"><div class="pt-1"><div class="flex gap-2 p-2"><i class="far fa-grin"></i><i class="fas fa-paperclip"></i><input type="text" placeholder="Type a message" class="rounded-full w-11/12 bg-gray-500"><i class="fas fa-microphone"></i></div></div></footer>';
+        }
+
+        function app2() {
+            _DF1.innerHTML = '<div class="bg-gray-900"><div><nav><div class="flex gap-2 p-2"><div class=""><img src="media/pp_azeeza.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;"></div><div class="flex gap-96"><div class="text-bold text-sm text-white my-auto"><p>Azeezah</p></div><div class="flex text-gray-300 text-md gap-10 my-auto"><i class="fas fa-search"></i><i class="fas fa-ellipsis-v"></i></i></div></div></div></nav></div><div class="bg-gray-600 p-2 text-white" style="background-image: url(media/bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png); background-attachment: fixed; background-blend-mode: normal; background-size: contain; height: 83vh"><div class="w-5/12 mx-auto bg-gray-500 rounded-md p-1"><div class="w-1/2 mx-auto text-xs text-center"><p class="mx-auto">Monday</p></div></div><div class="chat_box my-3 p-2"><div class="flex gap-4 p-2"><p class="text-bold text-sm">hey! how are you doing</p><p class="text-xs pt-6 self-baseline">07:22</p></div></div></div></div><footer class="bg-gray-900 text-gray-100"><div class="pt-1"><div class="flex gap-2 p-2"><i class="far fa-grin"></i><i class="fas fa-paperclip"></i><input type="text" placeholder="Type a message" class="rounded-full w-11/12 bg-gray-500"><i class="fas fa-microphone"></i></div></div></footer>';
+        }
+
+        function app3() {
+            _DF1.innerHTML = '<div class="bg-gray-900"><div><nav><div class="flex gap-2 p-2"><div class=""><img src="media/pp_sqi.jfif" alt="azeeza" style="width: 49px; height: 49px; border-radius: 100%;"></div><div class="flex gap-96"><div class="text-bold text-sm text-white my-auto"><p>SQI WEB LEVEL 2</p></div><div class="flex text-gray-300 text-md gap-10 my-auto"><i class="fas fa-search"></i><i class="fas fa-ellipsis-v"></i></i></div></div></div></nav></div><div class="bg-gray-600 p-2 text-white" style="background-image: url(media/bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png); background-attachment: fixed; background-blend-mode: normal; background-size: contain; height: 83vh"><div class="w-5/12 mx-auto bg-gray-500 rounded-md p-1"><div class="w-1/2 mx-auto text-xs text-center"><p class="mx-auto">Tuesday</p></div></div><div class="chat_box my-3 p-2"><div class="flex gap-4 pb-3 px-4"><p class="text-bold text-xs">Good morning everyone, <br> We welcome you guys to level. Wish you the very best in your line of learning.</p><p class="text-xs pt-12 self-baseline">07:22</p></div></div><div class="chat_box my-3 p-2"><div class="flex gap-4 pb-2 px-4"><p class="text-bold text-xs">Kindly join the new group and leave this current one.</p><p class="text-xs pt-6 self-baseline">07:22</p></div></div></div></div><footer class="bg-gray-900 text-gray-100"><div class="pt-1"><div class="flex gap-2 p-2"><i class="far fa-grin"></i><i class="fas fa-paperclip"></i><input type="text" placeholder="Type a message" class="rounded-full w-11/12 bg-gray-500"><i class="fas fa-microphone"></i></div></div></footer>';
+        }
+
+        function app4() {
+            _DF1.innerText = (12*10);
+        }
     </script>
 </body>
 </html>
